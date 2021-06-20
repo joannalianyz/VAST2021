@@ -1,0 +1,12 @@
+name: "VAST2021"
+title: "VAST 2021 Challenge"
+description: |
+  VAST 2021 Challenge
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
