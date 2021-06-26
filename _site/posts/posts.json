@@ -23,14 +23,14 @@
     "author": [
       {
         "name": "Joanna & Yen Ngee",
-        "url": "https://example.com/norajones"
+        "url": "https://example.com/joanna_and_yenngee"
       }
     ],
     "date": "2021-06-20",
     "categories": [],
     "contents": "\r\nIntroduction\r\nThe goal of the annual Institute of Electrical and Electronics Engineers (IEEE) Visual Analytics Science and Technology (VAST) Challenge is to advance the field of visual analytics through competition. The 2021 IEEE VAST Challenge brings back a classic challenge from 2014 to see how approaches and techniques have developed since the original release of the challenge.\r\nThe background of the challenge is as below:\r\nIn the roughly twenty years that Tethys-based GAStech has been operating a natural gas production site in the island country of Kronos, it has produced remarkable profits and developed strong relationships with the government of Kronos. However, GAStech has not been as successful in demonstrating environmental stewardship.\r\nIn January, 2014, the leaders of GAStech are celebrating their new-found fortune as a result of the initial public offering of their very successful company. In the midst of this celebration, several employees of GAStech go missing. An organization known as the Protectors of Kronos (POK) is suspected in the disappearance, but things may not be what they seem.\r\nObjective\r\nThe project aims to deliver an R-Shiny app that provides: 1. Interactive user interface design 2. Exploratory functions 3. Clustering techniques through both aspatial and geospatial methods\r\nWe will make use of R packages want to conceptualize a methodical approach of profiling individuals.\r\nWe do this by exploring and doing the following:\r\nObtaining a more holistic profile of employees from all our datasets.\r\nObtaining structured data, like how many coffees this person drink a day, etc * Identifying any anomalous or suspicious behavior.\r\nIdentifying formal (work-related) or informal (non-work related e.g., playing golf together during the weekends) relationships.\r\nUnderstanding what the daily routines of the employees are like.\r\nExploring if there is a difference between their weekday and weekend routines? Are their daily routines dependent on their employment type?\r\n\r\nDiscover different ways of grouping/segmenting the employees. *Are there any relationships between CC expenditure + GPS [MC2] and events we can extract from News articles [MC1]\r\nScope and Methodology\r\nOur scope and methodology is as below:\r\nAnalysis of VAST 21 data set with background research\r\nExploratory Data Analysis (EDA) methods in R\r\nExploratory Spatial Data Analysis (ESDA) methods in R\r\nClustering methods for aspatial and geospatial information in R\r\nNetwork Analysis in R\r\nR Markdown development for functionality checks\r\nR-Shiny app development for user interactivity\r\nFirst look\r\nMap of Abila, Kronos \r\nTrend of credit card transactions over time - The number of credit card transactions peak at 1pm and 8pm on a daily basis. \r\nMovement of Cars & Trucks - We see that there is no movement of trucks over the weekends. \r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-06-26T16:40:09+08:00",
+    "last_modified": "2021-06-26T17:43:39+08:00",
     "input_file": "project-proposal.utf8.md"
   }
 ]
