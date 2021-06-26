@@ -111,7 +111,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Who I am & Who You Are"]},{"type":"character","attributes":{},"value":["Project Proposal\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Joanna & Yen Ngee"]}]}]},{"type":"character","attributes":{},"value":["06-20-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Who I am & Who You Are"]},{"type":"character","attributes":{},"value":["Project Proposal\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Joanna & Yen Ngee"]}]}]},{"type":"character","attributes":{},"value":["06-20-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1477,36 +1477,68 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#objective">Objective</a></li>
+<li><a href="#datasets">Datasets</a></li>
+<li><a href="#scope-and-methodology">Scope and Methodology</a></li>
+<li><a href="#first-look">First look</a></li>
+</ul>
+</nav>
+</div>
 <h1 id="introduction">Introduction</h1>
-<p>The goal of the annual Institute of Electrical and Electronics Engineers (IEEE) Visual Analytics Science and Technology (VAST) Challenge is to advance the field of visual analytics through competition. The 2021 IEEE VAST Challenge brings back a classic challenge from 2014 to see how approaches and techniques have developed since the original release of the challenge.</p>
-<p>The background of the challenge is as below:</p>
+<p>The goal of the annual Institute of Electrical and Electronics Engineers (IEEE) Visual Analytics Science and Technology (VAST) Challenge is to advance the field of visual analytics through competition. The 2021 IEEE VAST Challenge brings back a classic challenge from 2014 to see how approaches and techniques have developed since the original release of the challenge.<br />
+The background of the challenge is as below:</p>
 <p>In the roughly twenty years that Tethys-based GAStech has been operating a natural gas production site in the island country of Kronos, it has produced remarkable profits and developed strong relationships with the government of Kronos. However, GAStech has not been as successful in demonstrating environmental stewardship.</p>
 <p>In January, 2014, the leaders of GAStech are celebrating their new-found fortune as a result of the initial public offering of their very successful company. In the midst of this celebration, several employees of GAStech go missing. An organization known as the Protectors of Kronos (POK) is suspected in the disappearance, but things may not be what they seem.</p>
 <h1 id="objective">Objective</h1>
-<p>The project aims to deliver an R-Shiny app that provides: 1. Interactive user interface design 2. Exploratory functions 3. Clustering techniques through both aspatial and geospatial methods</p>
-<p>We will make use of R packages want to conceptualize a methodical approach of profiling individuals.</p>
-<p>We do this by exploring and doing the following:</p>
+<p>This project aims to understand better the individuals and organizations that are involved in this situation. We do this by exploring and doing the following:</p>
 <ul>
-<li>Obtaining a more holistic profile of employees from all our datasets.</li>
-<li>Obtaining structured data, like how many coffees this person drink a day, etc * Identifying any anomalous or suspicious behavior.</li>
-<li>Identifying formal (work-related) or informal (non-work related e.g., playing golf together during the weekends) relationships.</li>
-<li>Understanding what the daily routines of the employees are like.
+<li>Obtaining a more holistic profile of employees
 <ul>
+<li>Understanding what the daily routines and characteristics of the employees are like.</li>
 <li>Exploring if there is a difference between their weekday and weekend routines? Are their daily routines dependent on their employment type?</li>
+<li>Identifying defining characteristics of individuals/organization, like how many coffees this person drink a day, how many times does this person appear in news articles, what are each person’s expenditure etc</li>
+<li>Identifying any anomalous or suspicious behavior.</li>
 </ul></li>
-<li>Discover different ways of grouping/segmenting the employees. *Are there any relationships between CC expenditure + GPS [MC2] and events we can extract from News articles [MC1]</li>
+<li>Identifying formal (work-related) or informal (non-work related e.g., playing golf together during the weekends) relationships.
+<ul>
+<li>Discover different ways of grouping/segmenting the employees.</li>
+<li>Discover any associations based on common interest given in the data.</li>
+<li>Are there any relationships between CC expenditure + GPS [MC2] and events we can extract from News articles [MC1]</li>
+</ul></li>
 </ul>
+<p>We will do so by delivering an R-Shiny app that provides: 1. Interactive user interface design 2. Exploratory functionality that allows user to interact with the data and gain insights. 3. Visualize individual/organization profiles and relationships between them.</p>
+<h1 id="datasets">Datasets</h1>
+<p>We’ll be using data sets from Mini-Challenge 1 [MC1] and Mini-Challenge 2 [MC2].</p>
+<p>From [MC1], we will be transforming the non-structured data in form of news articles into structured data via text analytics and then extract attributes per individual.</p>
+<p>From [MC2], we will be extracting insights based on credit card transactions and geographical data.</p>
+<p>We will also be joining the two data sets based on individuals to analyzing attributes by features across data sets.</p>
 <h1 id="scope-and-methodology">Scope and Methodology</h1>
 <p>Our scope and methodology is as below:</p>
 <ol type="1">
-<li>Analysis of VAST 21 data set with background research</li>
+<li>Data preparation using dplyr and other r packages<br />
+</li>
+<li>Analysis of VAST 21 data set with background research using some of the following methods:<br />
+</li>
+</ol>
+<ul>
 <li>Exploratory Data Analysis (EDA) methods in R</li>
 <li>Exploratory Spatial Data Analysis (ESDA) methods in R</li>
 <li>Clustering methods for aspatial and geospatial information in R</li>
+<li>Text analysis in R</li>
 <li>Network Analysis in R</li>
+</ul>
+<ol start="3" type="1">
+<li>Creating a R shiny dashboard showing our findings/insights and conclusions:</li>
+</ol>
+<ul>
 <li>R Markdown development for functionality checks</li>
 <li>R-Shiny app development for user interactivity</li>
-</ol>
+</ul>
 <h1 id="first-look">First look</h1>
 <ul>
 <li><p>Map of Abila, Kronos <img src="project-proposal_files/IMG/ABILAMap.png" /></p></li>
