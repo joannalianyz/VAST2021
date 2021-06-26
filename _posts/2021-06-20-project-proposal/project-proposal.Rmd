@@ -4,7 +4,6 @@ description: |
   Project Proposal
 author:
   - name: Joanna & Yen Ngee
-    url: https://example.com/joanna_and_yenngee
 date: 06-20-2021
 output:
   distill::distill_article:
