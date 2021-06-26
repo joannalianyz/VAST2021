@@ -41,16 +41,16 @@ We do this by exploring and doing the following:
 * Obtaining a more holistic profile of employees from all our datasets.
 * Obtaining structured data, like how many coffees this person drink a day, etc * Identifying any anomalous or suspicious behavior.
 * Identifying formal (work-related) or informal (non-work related e.g., playing golf together during the weekends) relationships.
-* Undestanding what the daily routines of the employees are like. 
+* Understanding what the daily routines of the employees are like. 
   + Exploring if there is a difference between their weekday and weekend routines? Are their daily routines dependent on their employment type?
 * Discover different ways of grouping/segmenting the employees.
 *Are there any relationships between CC expenditure + GPS [MC2] and events we can extract from News articles [MC1]
 
 # Scope and Methodology
 
-Our scope and methodolofy is as below:  
+Our scope and methodology is as below:  
 
-1.	Analysis of VAST 21 dataset with background research
+1.	Analysis of VAST 21 data set with background research
 2.	Exploratory Data Analysis (EDA) methods in R
 3.	Exploratory Spatial Data Analysis (ESDA) methods in R
 4.	Clustering methods for aspatial and geospatial information in R
